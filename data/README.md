@@ -19,15 +19,23 @@ Nous comparerons une proportion investie fixe à une proportion adaptée à la v
 
 ## Équipe et répartition proposée
 
-| Membre            | Tâches principales                                                |
-|-------------------|-------------------------------------------------------------------|
-| ELBENNANI Ilyass  | Collecte et préparation des données, modèles ARIMA/SARIMA/SARIMAX |
-| KIRAJ Walid       | GARCH, mesures du risque, stratégie et backtest                   |
-| ALAOUI Rida       | Modèles ML/DL et interface Streamlit                              |
-
-L’intégration, le paper trading, les tests et la documentation seront réalisés ensemble.
+| Membre | Rôle | Tâches |
+|---|---|---|
+| ELBENNANI Ilyass | Données et économétrie | Collecter GLD/SPY et contrôler la qualité des données ; calculer les rendements et préparer les variables ; séparer apprentissage, validation et test ; développer les références simples et ARIMA/SARIMA/SARIMAX ; comparer les prévisions et examiner les résidus ; réaliser Market Data et la partie économétrique du Model Laboratory. |
+| KIRAJ WALID | Risque, stratégie et backtest | Tester les effets ARCH et prévoir la volatilité avec GARCH ; calculer et vérifier VaR/ES ; définir les décisions et les expositions fixe/dynamique ; développer le backtest avec frais et calendrier d’exécution ; analyser rendement, pertes et drawdown ; réaliser Risk Management, Trading Strategy et Backtesting. |
+| ALAOUI Rida | ML/DL et intégration | Développer un modèle linéaire régularisé, un modèle arborescent et un MLP ; comparer les prévisions selon le protocole commun ; réaliser la partie ML/DL du Model Laboratory ; organiser la navigation Streamlit et intégrer les vues de chaque membre ; préparer le mode démonstration hors connexion. |
+| Toute l’équipe | Travail commun | Réaliser le paper trading et le suivi du portefeuille ; définir les formats communs et vérifier l’absence de fuite d’information ; tester et documenter chaque module ; relire le code ; préparer le rapport et la soutenance. |
 
 ## Diagramme de l’application
 
-![Diagramme de l’application](images/DiagrammeApplication.png)
-
+```mermaid
+flowchart TD
+    A[Collecte et préparation des données] --> B[Prévision du rendement]
+    A --> C[Prévision du risque]
+    B --> D[Stratégie et exposition]
+    C --> D
+    D --> E[Backtest]
+    D --> F[Paper trading]
+    E --> G[Résultats dans Streamlit]
+    F --> G
+```
