@@ -28,14 +28,4 @@ Nous comparerons une proportion investie fixe à une proportion adaptée à la v
 
 ## Diagramme de l’application
 
-```mermaid
-flowchart TD
-    A[Collecte et préparation des données] --> B[Prévision du rendement]
-    A --> C[Prévision du risque]
-    B --> D[Stratégie et exposition]
-    C --> D
-    D --> E[Backtest]
-    D --> F[Paper trading]
-    E --> G[Résultats dans Streamlit]
-    F --> G
-```
+![Diagramme de l’application](images/DiagrammeApplication.png)
