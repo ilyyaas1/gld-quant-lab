@@ -1,0 +1,11 @@
+{
+  "symbol": "GLD",
+  "source": "Yahoo Finance via yfinance",
+  "interval": "1d",
+  "start": "2018-01-01",
+  "end_exclusive": "2026-10-31",
+  "auto_adjust": true,
+  "train_end_inclusive": "2022-12-31",
+  "validation_end_inclusive": "2024-12-31",
+  "test_end_inclusive": "2026-10-30"
+}

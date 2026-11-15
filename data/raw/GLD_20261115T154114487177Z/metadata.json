@@ -1,0 +1,49 @@
+{
+  "source": "Yahoo Finance via yfinance",
+  "symbol": "GLD",
+  "interval": "1d",
+  "requested_start_inclusive": "2018-01-01",
+  "requested_end_exclusive": "2026-10-31",
+  "observed_first_date": "2018-01-02",
+  "observed_last_date": "2026-10-30",
+  "acquired_at_utc": "2026-11-15T15:41:14.487177+00:00",
+  "rows": 2220,
+  "columns": [
+    "Date",
+    "Capital Gains",
+    "Close",
+    "Dividends",
+    "High",
+    "Low",
+    "Open",
+    "Stock Splits",
+    "Volume"
+  ],
+  "currency": "USD",
+  "volume_unit": "Parts de GLD échangées",
+  "market_timezone": "America/New_York",
+  "date_convention": "Date de séance sans heure ni fuseau dans le CSV ; ne représente pas un instant de disponibilité.",
+  "auto_adjust": true,
+  "adjustment_convention": "OHLC ajustés par yfinance",
+  "actions_requested": true,
+  "keepna": true,
+  "repair": false,
+  "quality_audit_status": "À réaliser",
+  "config": {
+    "symbol": "GLD",
+    "source": "Yahoo Finance via yfinance",
+    "interval": "1d",
+    "start": "2018-01-01",
+    "end_exclusive": "2026-10-31",
+    "auto_adjust": true,
+    "train_end_inclusive": "2022-12-31",
+    "validation_end_inclusive": "2024-12-31",
+    "test_end_inclusive": "2026-10-30"
+  },
+  "versions": {
+    "pandas": "2.3.3",
+    "yfinance": "1.8.0"
+  },
+  "csv_file": "GLD_daily.csv",
+  "sha256": "252ced6250c58139a01ea8493eedba65a876be593fe21ba94f6d416ff53f70fa"
+}
