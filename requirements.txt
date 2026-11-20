@@ -3,3 +3,5 @@ pandas
 yfinance
 matplotlib
 pandas_market_calendars==5.6.1
+statsmodels
+pmdarima==2.1.1
