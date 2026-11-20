@@ -177,7 +177,7 @@ Les graphiques illustrent :
 
 | Fichier | Rôle |
 |---|---|
-| `notebooks/D03_B06_GLD_ARIMA_classique_et_AutoARIMA.ipynb` | Notebook à placer dans `notebooks/`. Charge les données D02, réalise ADF et ACF/PACF, estime les cinq méthodes, affiche les diagnostics et graphiques, compare leurs erreurs et enregistre les prévisions. |
+| `notebooks/03_econometrie_moyenne.ipynb` | Notebook à placer dans `notebooks/`. Charge les données D02, réalise ADF et ACF/PACF, estime les cinq méthodes, affiche les diagnostics et graphiques, compare leurs erreurs et enregistre les prévisions. |
 
 ### Résultats enregistrés
 
@@ -203,7 +203,7 @@ python -m pip install -r requirements.txt
 python -m pip install statsmodels pmdarima
 ```
 
-**3. Ouvrir le notebook** `notebooks/D03_B06_GLD_ARIMA_classique_et_AutoARIMA.ipynb` avec Jupyter ou VS Code, puis exécuter toutes les cellules dans l’ordre. Il peut être lancé depuis la racine du dépôt ou depuis `notebooks/`.
+**3. Ouvrir le notebook** `notebooks/03_econometrie_moyenne.ipynb` avec Jupyter ou VS Code, puis exécuter toutes les cellules dans l’ordre. Il peut être lancé depuis la racine du dépôt ou depuis `notebooks/`.
 
 **4. Vérifier les sorties** dans `reports/d03/` et commenter les scores obtenus sur les **vraies données**. Il n’est pas nécessaire de télécharger les données à nouveau si le snapshot existe.
 
